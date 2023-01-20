@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap');
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  
+}
+
+.black-toast {
+  background-color: black;
+  color: white;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.highlight{
+  background: linear-gradient(90deg, #ff433e, #ef8534);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.summary{
+  max-width: 640px;
+}
+
+.header span{
+  background: rgba( 255, 255, 255, 0.65 );
+box-shadow: 0 8px 32px 0 rgba(165, 165, 165, 0.198);
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+padding: 10px;
+font-family: 'Montserrat', sans-serif;
+font-size: 43px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #ff433e, #ef8534);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  min-width: 400px;
+}
+
+.header h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  background: linear-gradient(90deg, #ff433e, #ef8534);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  min-width: 400px;
+  text-decoration: underline;
+}
+
+.value{
+  background: linear-gradient(90deg, #fbfbfbfe, #27272799);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: 80px;
+  padding: 0px;
+  margin: 0px;
+}
+.value:hover{
+  cursor: grab;
+  background: linear-gradient(90deg, #27272799, #fbfbfbfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: 80px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.detail{
+  color: rgba(255, 255, 255, 0.487);
+  font-size: 12px;
+}
+
+.button{
+  background:linear-gradient(90deg, #ff433e, #ff7847);
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin: 12px;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #713c00aa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #713c00aa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
