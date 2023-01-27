@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Detail() {
+function Detail(props) {
   return (
     <div className='detail'>
-      <p>You can see the value of flipper here!</p>
+      <p>{props.detail}</p>
     </div>
   )
 }

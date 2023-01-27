@@ -6,16 +6,16 @@ import Header from "./components/Header";
 import Button from "./components/Button";
 import { checkNetwork } from "./utils/checkNetwork";
 import { toastObj } from "./utils/toastObj";
-import FlipperContract from "./contracts/flipper.json";
+import GreeterContract from "./contracts/greeter.json";
 import "./App.css"
 import Summary from "./components/Summary";
 import Detail from "./components/Detail";
 import Value from "./components/Value";
 
-const FlipperContractAddress = FlipperContract.address;
-const FlipperContractABI = FlipperContract.abi;
+const GreeterContractAddress = GreeterContract.address;
+const GreeterContractABI = GreeterContract.abi;
 
-const NETWORK_ID = '2221';
+const NETWORK_ID = '97';
 
 function App() {
     const [isWalletConnected,setIsWalletConnected] = useState(false);
@@ -23,6 +23,7 @@ function App() {
     const [signer, setSigner] = useState(null);
     const [selectedAddress,setSelectedAddress] = useState(null);
     const [val,setVal] = useState(null);
+    const [inputVal,setInputVal] = useState("");
 
     const checkExtension = async()=>{
         if(window.ethereum == undefined){
@@ -40,16 +41,18 @@ function App() {
         setSigner(_signer);
     }
 
-    const getValue = async()=>{
+    const getMessage = async()=>{
+      console.log("clicked me");
         const factoryContract = new ethers.Contract(
-            FlipperContractAddress,
-            FlipperContractABI,
+            GreeterContractAddress,
+            GreeterContractABI,
             signer
           ); 
-
+          console.log(await factoryContract);
           try {
-            const result = await factoryContract.getValue();
-            console.log(result);
+            console.log("i am here")
+            const result = await factoryContract.getMessage();
+            console.log("result",result);
             setVal(result);
             toast("Fetched Successfully!", toastObj);
           } catch (error) {
@@ -58,17 +61,17 @@ function App() {
           }
     }
 
-    const toggleValue = async()=>{
+    const setMessage = async()=>{
         const factoryContract = new ethers.Contract(
-            FlipperContractAddress,
-            FlipperContractABI,
+            GreeterContractAddress,
+            GreeterContractABI,
             signer
           ); 
 
           try {
             toast("Transaction Initiated!", toastObj);
-            const result = await factoryContract.toggleValue();
-            await getValue();
+            const result = await factoryContract.setMessage(inputVal);
+            await getMessage();
             toast("Transaction Successful!", toastObj);
           } catch (error) {
             toast(error, toastObj);
@@ -91,18 +94,18 @@ function App() {
           })
           return;
         }
-        toast(`Connect to Network Name: Kava EVM Testnet
-        New RPC URL: https://evm.testnet.kava.io
-        Chain ID: 2221
-        Currency Symbol: KAVA
-        Explorer URL: https://explorer.testnet.kava.io`,toastObj)
+        toast(`Connect to Network Name: BNB Testnet
+        New RPC URL: https://data-seed-prebsc-1-s1.binance.org:8545/
+        Chain ID: 97
+        Currency Symbol: BNB
+        Explorer URL: https://testnet.bscscan.com`,toastObj)
         
 }
 
 useEffect(() => {
   if(isWalletConnected){
     toast("Wallet Connected Successfully!", toastObj);
-    getValue();
+    getMessage();
   }
 }, [isWalletConnected])
 
@@ -112,27 +115,30 @@ useEffect(() => {
     <Header/>
     {!isWalletConnected?
     <>
+    <br />
+    <br />
     <Summary/>
+    <br /><br />
     <Button title="Connect Wallet " func={connectWallet}/>
     <ToastContainer/>
     </>
     :
     <>
-    <Detail/>
-    
+    <Detail detail="MESSAGE"/>
     {val===null?"loading":
-    <Value val = {val.toString().toUpperCase()}/>
+    <Value val = {val}/>
     }
+   
+    <Detail detail="SET MESSAGE"/>
+    <input className="setMsg" type="text" onChange={e=>setInputVal(e.target.value)} />
     <br />
     <div className="btns">
-
-    <Button title="Get Value " func={getValue}/>
-    <Button title="Toggle Value" func={toggleValue}/>
+    <Button title="Get Message " func={getMessage}/>
+    <Button title="Set Message" func={setMessage}/>
     </div>
     <ToastContainer/>
     </>
   }
-    
     </div>
   )
 }

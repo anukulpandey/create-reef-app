@@ -22,6 +22,7 @@
   flex-direction: column;
   align-items: center;
 }
+
 .highlight{
   background: linear-gradient(90deg, #ff433e, #ef8534);
   -webkit-background-clip: text;
@@ -31,55 +32,42 @@
 
 .summary{
   max-width: 640px;
-}
-
-.header span{
-  background: rgba( 255, 255, 255, 0.65 );
-box-shadow: 0 8px 32px 0 rgba(165, 165, 165, 0.198);
-backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 4px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-padding: 10px;
-font-family: 'Montserrat', sans-serif;
-font-size: 43px;
-  font-weight: 800;
-  background: linear-gradient(90deg, #ff433e, #ef8534);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  min-width: 400px;
-}
-
+  font-size: 20px;
+  font-family: 'Montserrat',sans-serif;
+  letter-spacing: 1px;
+  font-weight: 100;
+} 
 .header h1{
-  font-family: 'Montserrat', sans-serif;
+  font-family: sans-serif;
   font-weight: 800;
-  background: linear-gradient(90deg, #ff433e, #ef8534);
+  background: linear-gradient(90deg, #F0B90B, #F0B90B);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   min-width: 400px;
   text-decoration: underline;
 }
 
-.value{
-  background: linear-gradient(90deg, #fbfbfbfe, #27272799);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: sans-serif;
-  font-weight: 800;
-  font-size: 80px;
-  padding: 0px;
-  margin: 0px;
+.header img{
+  padding: 25px;
 }
-.value:hover{
-  cursor: grab;
-  background: linear-gradient(90deg, #27272799, #fbfbfbfe);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
+.value{
   font-family: sans-serif;
   font-weight: 800;
-  font-size: 80px;
+  font-size: 30px;
   padding: 0px;
   margin: 0px;
+  margin-top: -10px;
+}
+
+.setMsg{
+  padding: 8px 20px;
+  border-radius: 10px;
+  border: 0px solid grey;
+}
+
+.setMsg input:active{
+  border-color: #FAD338;
 }
 
 .detail{
@@ -88,12 +76,13 @@ font-size: 43px;
 }
 
 .button{
-  background:linear-gradient(90deg, #ff433e, #ff7847);
-  color: white;
-  font-family: 'Montserrat', sans-serif;
+  background:linear-gradient(90deg, #FAD338, #F2BC07);
+  color: #0C0E12;
+  font-family: sans-serif;
   font-weight: 600;
   margin: 12px;
 }
+
 
 .logo:hover {
   filter: drop-shadow(0 0 2em #713c00aa);

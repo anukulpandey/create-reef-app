@@ -3,7 +3,8 @@ import React from 'react'
 function Header() {
   return (
     <div className="header">
-      <h1> <span>Kava</span> Flipper dApp</h1>
+      <img src="./logo.png" alt="" width={60} /> 
+      <h1>Create Binance dApp</h1> 
     </div>
   )
 }
