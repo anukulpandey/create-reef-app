@@ -1,11 +1,11 @@
 {
-	"name": "create-binance-dapp",
-	"version": "0.1.12",
+	"name": "create-reef-app",
+	"version": "0.0.1",
 	"keywords": [
-		"create-binance-dapp",
-		"create binance dapp",
+		"create-reef-app",
+		"create reef app",
 		"boilerplate",
-		"binance"
+		"reef-chain"
 	],
 	"scripts": {
 		"dev": "nodemon bin/cli.js",
@@ -13,7 +13,7 @@
 		"start": "node bin/cli.js"
 	},
 	"bin": {
-		"create-avalanche-dapp": "./bin/cli.js"
+		"create-reef-app": "./bin/cli.js"
 	},
 	"type": "module",
 	"dependencies": {
@@ -26,9 +26,9 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/anukulpandey/create-binance-dapp.git"
+		"url": "https://github.com/anukulpandey/create-reef-app.git"
 	},
-	"homepage": "https://github.com/anukulpandey/create-binance-dapp/blob/main/README.md",
+	"homepage": "https://github.com/anukulpandey/create-binance-app/blob/main/README.md",
 	"devDependencies": {
 		"nodemon": "^2.0.20"
 	}
