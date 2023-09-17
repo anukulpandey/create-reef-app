@@ -1,6 +1,6 @@
 {
 	"name": "create-reef-app",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"keywords": [
 		"create-reef-app",
 		"create reef app",
@@ -28,7 +28,7 @@
 		"type": "git",
 		"url": "https://github.com/anukulpandey/create-reef-app.git"
 	},
-	"homepage": "https://github.com/anukulpandey/create-binance-app/blob/main/README.md",
+	"homepage": "https://github.com/anukulpandey/create-reef-app/blob/main/README.md",
 	"devDependencies": {
 		"nodemon": "^2.0.20"
 	}

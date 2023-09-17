@@ -126,7 +126,7 @@ try {
 			type: "text",
 			name: "projectPath",
 			message: "What is your project name? \n",
-			initial: "my-binance-dapp",
+			initial: "my-reef-dapp",
 		}).then(data => data.projectPath);
 	}
 
