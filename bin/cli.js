@@ -163,7 +163,7 @@ try {
 		const finalPrompt = await prompts({
 			type: "confirm",
 			name: "value",
-			message: `Are you sure you want to create your avalanche dapp in ${chalk.magenta(
+			message: `Are you sure you want to create your reef dapp in ${chalk.magenta(
 				projectPath
 			)} folder? \n`,
 			initial: true,
