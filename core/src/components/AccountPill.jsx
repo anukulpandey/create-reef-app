@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react'
 import Uik from "@reef-chain/ui-kit";
 import ReefStateContext from '../context/ReefStateContext';
 import { utils } from '@reef-chain/react-lib';
+import {reefState} from "@reef-chain/util-lib";
 
 
 function AccountPill() {

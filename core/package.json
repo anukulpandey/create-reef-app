@@ -15,7 +15,7 @@
     "@reef-chain/react-lib": "2.0.2-alpha1",
     "@reef-chain/ui-kit": "^1.1.3",
     "@reef-chain/util-lib": "2.0.0-alpha1",
-    "@reef-defi/evm-provider": "^1.0.11",
+    "@reef-chain/evm-provider": "2.0.0-alpha6",
     "axios": "^1.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

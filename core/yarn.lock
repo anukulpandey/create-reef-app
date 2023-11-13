@@ -5249,7 +5249,7 @@
     blakejs "~1.1.0"
     ethers "~5.5.0"
 
-"@reef-chain/evm-provider@^2.0.0-alpha6":
+"@reef-chain/evm-provider@2.0.0-alpha6", "@reef-chain/evm-provider@^2.0.0-alpha6":
   version "2.0.0-alpha6"
   resolved "https://registry.npmjs.org/@reef-chain/evm-provider/-/evm-provider-2.0.0-alpha6.tgz#3278e1ab9f20456888e1da541cfe9c6b9e562b29"
   integrity sha512-6rgS6i0qaERRcHpmAT3osVUAqZIqGVDsyah0Dd7IyzSldFKzjV6n/Odf7kbmms7uIQQDMRq8pjWU5jEu1g7iGg==
@@ -5390,7 +5390,7 @@
     "@reef-defi/api-derive" "^1.1.0"
     "@reef-defi/types" "^1.1.0"
 
-"@reef-defi/evm-provider@^1.0.11", "@reef-defi/evm-provider@^1.0.9":
+"@reef-defi/evm-provider@^1.0.9":
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/@reef-defi/evm-provider/-/evm-provider-1.0.11.tgz#54174ddbb9bb4fdd3a07052cddf4920738d4ffa6"
   integrity sha512-xYBCv4DqiHNGG2yEvTCay/TdortMuWwe3XMn3YxdfvIPGpFFrkyBM42lezqQRQoR8VO3c6//lx7VmL0N81DVgw==
