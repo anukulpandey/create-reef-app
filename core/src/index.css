@@ -1,50 +1,26 @@
-.balance-account-selector{
+.navbar-container {
     display: flex;
-    position: absolute;
-    right: 20px;
-    top: 10px;
-}
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+  }
+  
+  .accounts-pill {
+    margin-right: 10px; 
+  }
 
-.toggle-switch{
+  .reef-logo{
+    padding: 4px;
+  }
+
+  .app{
+    min-height: 100vh;
+  }
+
+  .loader{
     display: flex;
-    position: absolute;
-    left: 20px;
-    top: 10px;
-}
-
-.balance-account-selector-btn{
-    margin-right: 10px;
-}
-
-.assets-table{
-    margin-top: 80px;
-    padding-left: 80px;
-    padding-right: 80px;
-}
-
-.headline-toggle-headline{
-    padding-right: 20px;
-}
-
-.headline-toggle{
-    display: flex;
-}
-
-.table-and-nfts{
-    display: flex;
-}
-
-.table-and-nfts__table{
-    flex: 1.7;
-}
-
-.table-and-nfts__nfts{
-    padding: 40px;
-    flex: 1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-}
-.toggle-switch-title{
-    padding-left: 20px;
-}
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+  }
