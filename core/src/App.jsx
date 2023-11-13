@@ -2,6 +2,7 @@ import React from 'react'
 import {hooks} from "@reef-chain/react-lib";
 import Uik from "@reef-chain/ui-kit";
 import Navbar from './components/Navbar';
+import ReefStateContext from './context/ReefStateContext';
 
 function App() {
   const {
@@ -11,6 +12,7 @@ function App() {
   );
   console.log(loading)
   return (
+    <ReefStateContext.Provider value={{signers,selectedReefSigner}}>
     <div className='app'>
       <Navbar isConnected={signers && signers.length}/>
       {loading?
@@ -19,6 +21,7 @@ function App() {
     </div>
    :<>Not loading</>}
     </div>
+    </ReefStateContext.Provider>
   )
 }
 
