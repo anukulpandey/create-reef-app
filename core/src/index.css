@@ -24,3 +24,59 @@
     justify-content: center;
     min-height: 80vh;
   }
+
+  .account-pill-btn{
+    display: flex;
+  }
+
+  .account-pill-btn-address{
+    margin: 0;
+    border-radius: 0px 40px 40px 0px;
+    z-index: 1;
+  }
+
+  .account-pill-btn-name{
+    margin-right: -12px;
+    z-index: 2;
+  }
+
+  .container{
+    max-width: 80vw;
+
+  }
+
+  .greeter-container{
+    max-width: 50vw;
+    margin-top: 30px;
+
+  }
+
+  .body-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .greeter-heading{
+    font-size: 14px;
+    margin-bottom: -20px;
+  }
+
+  .divider{
+    margin-bottom: -30px!important;
+  }
+
+  .greeter-btn{
+    width: 100%;
+  }
+
+  .navbar-switch{
+    display: flex;
+  }
+
+  .navbar-balance{
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+  }
