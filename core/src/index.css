@@ -69,3 +69,13 @@
   .greeter-btn{
     width: 100%;
   }
+
+  .navbar-switch{
+    display: flex;
+  }
+
+  .navbar-balance{
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+  }
