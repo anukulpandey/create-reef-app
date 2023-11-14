@@ -39,3 +39,33 @@
     margin-right: -12px;
     z-index: 2;
   }
+
+  .container{
+    max-width: 80vw;
+
+  }
+
+  .greeter-container{
+    max-width: 50vw;
+
+  }
+
+  .body-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .greeter-heading{
+    font-size: 14px;
+    margin-bottom: -20px;
+  }
+
+  .divider{
+    margin-bottom: -30px!important;
+  }
+
+  .greeter-btn{
+    width: 100%;
+  }
