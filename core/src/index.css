@@ -24,3 +24,18 @@
     justify-content: center;
     min-height: 80vh;
   }
+
+  .account-pill-btn{
+    display: flex;
+  }
+
+  .account-pill-btn-address{
+    margin: 0;
+    border-radius: 0px 40px 40px 0px;
+    z-index: 1;
+  }
+
+  .account-pill-btn-name{
+    margin-right: -12px;
+    z-index: 2;
+  }
