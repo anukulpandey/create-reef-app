@@ -15,7 +15,7 @@ function Navbar(props) {
         {props.isConnected ?<div className='navbar-switch'>
           <AccountPill/>
           <div className="navbar-balance">
-          <Uik.ReefAmount value={selectedReefSigner?selectedReefSigner.balance+" REEF":'Loading'} />
+          <Uik.ReefAmount value={selectedReefSigner?balanceUtils.toReefBalanceDisplay(selectedReefSigner.balance):'Loading'} />
           </div>
         </div>  :<></>}
       </div>

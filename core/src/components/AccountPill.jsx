@@ -15,6 +15,10 @@ function AccountPill() {
       reefState.setSelectedNetwork(toSelect);
   };
 
+  const selectAccount = (account)=>{
+    reefState.setSelectedAddress(account.address)
+  }
+
   const selectedNetwork = hooks.useObservableState(reefState.selectedNetwork$);
 
   return (
