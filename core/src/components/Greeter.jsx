@@ -29,9 +29,16 @@ function Greeter() {
             setBtnVal("Processing ...")
             const contractInstance = new ethers.Contract(greeter.address,greeter.abi,selectedReefSigner.signer);
         const res = await contractInstance.setGreeting(value);
-        console.log(res);
+        if(res.hash){
+            Uik.dropConfetti();
+            Uik.notify.success('Successfully updated Greeting!')
+            setBtnVal("Update Greeting")
+        }else{
+            Uik.notify.danger('An error has occurred.')
+        }
         } catch (error) {
             console.log(error)
+            Uik.notify.danger('An error has occurred.')
         }
         
     }
